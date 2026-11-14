@@ -253,11 +253,12 @@ revealTargets.forEach(element => revealObserver.observe(element));
 const askBubble = document.querySelector('.ask-bubble');
 const heroSection = document.querySelector('#home');
 if (askBubble && heroSection) {
-  let heroVisible = false;
+  let heroVisible = true;
   const showAskBubble = () => askBubble.classList.toggle('is-visible', heroVisible && !document.body.classList.contains('chat-open'));
+  window.setTimeout(showAskBubble, 280);
   new IntersectionObserver(([entry]) => {
     heroVisible = entry.isIntersecting;
     showAskBubble();
-  }, { threshold: 0.45 }).observe(heroSection);
+  }, { threshold: 0.2 }).observe(heroSection);
   new MutationObserver(showAskBubble).observe(document.body, { attributes: true, attributeFilter: ['class'] });
 }

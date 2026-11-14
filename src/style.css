@@ -35,12 +35,11 @@ html[data-theme=dark] .project li,
 html[data-theme=dark] .project-visual,
 html[data-theme=dark] .resume-form input{border-color:var(--cream)}
 html[data-theme=dark] .resume-form input::placeholder{color:rgba(238,240,212,.55)}
-.ask-bubble{position:fixed;right:86px;bottom:32px;z-index:8;margin:0;padding:8px 12px;background:var(--cream);color:#143f99;font:600 .72rem var(--mono);letter-spacing:.04em;opacity:0;visibility:hidden;transform:translateY(8px) scale(.92);transform-origin:right center}
-.ask-bubble:after{content:'';position:absolute;right:-7px;bottom:10px;border:7px solid transparent;border-left-color:var(--cream);border-right:0}
-.ask-bubble.is-visible{visibility:visible;animation:ask-pop .55s cubic-bezier(.22,1,.36,1) both,ask-float 2.2s ease-in-out .55s infinite}
+.ask-bubble{position:fixed;right:78px;bottom:28px;z-index:8;margin:0;padding:9px 13px;border-radius:16px 16px 4px 16px;background:var(--cream);color:#143f99;font:600 .72rem var(--mono);letter-spacing:.04em;opacity:0;visibility:hidden;transform:scale(.2);transform-origin:right bottom}
+.ask-bubble:after{content:'';position:absolute;right:-5px;bottom:7px;width:10px;height:10px;background:var(--cream);border-bottom-right-radius:10px;clip-path:polygon(0 0,100% 100%,0 100%)}
+.ask-bubble.is-visible{visibility:visible;animation:ask-pop .55s cubic-bezier(.16,1.35,.4,1) .4s both}
 .chat-open .ask-bubble{display:none}
-@keyframes ask-pop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
-@keyframes ask-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes ask-pop{0%{opacity:0;transform:translate(10px,14px) scale(.15)}55%{opacity:1;transform:translate(0,-2px) scale(1.07)}100%{opacity:1;transform:none}}
 @media(max-width:760px){.ask-bubble{right:68px;bottom:22px}}
 @media(prefers-reduced-motion:reduce){.ask-bubble.is-visible{animation:none;opacity:1;transform:none}}
 
@@ -103,4 +102,24 @@ footer{flex-wrap:wrap;row-gap:8px}
   .menu-overlay a,.menu-chat-trigger{font-size:clamp(1.55rem,7.5vw,2.3rem)}
   .contact-links a{font-size:.82rem}
   .project-visual{margin-top:16px}
+}
+
+.menu-overlay{overflow:hidden}
+.site-header{height:52px}
+.brand{font-size:1.15rem;gap:8px}
+.menu-button{width:min(132px,30vw);font-size:.72rem;gap:10px}
+.theme-toggle{width:92px;font-size:.66rem}
+.menu-overlay,.article-view{inset:52px 0 0}
+h2{font-size:clamp(1.7rem,3.4vw,3.35rem)}
+.hero{min-height:0;padding-top:clamp(84px,8vw,120px)}
+.hero-title{font-size:clamp(2.15rem,5.6vw,6rem)}
+.project h3{font-size:clamp(1.35rem,1.8vw,2rem);margin-top:22px}
+.signature{font-size:clamp(2.8rem,10vw,6.5rem)}
+.grid-section{padding-top:clamp(76px,7vw,108px);padding-bottom:clamp(48px,5vw,72px)}
+@media(max-width:760px){
+  .site-header{height:48px}
+  .menu-overlay,.article-view{inset:48px 0 0}
+  .menu-button{width:88px}
+  h2{font-size:clamp(1.7rem,8vw,2.4rem)}
+  .hero-title{font-size:clamp(2.1rem,11vw,3.2rem)}
 }

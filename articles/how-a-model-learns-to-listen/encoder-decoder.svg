@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 360" role="img" aria-label="Encoder decoder architecture">
+  <rect width="1080" height="360" fill="#FDFFDA"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF594A"/>
+    </marker>
+  </defs>
+  <rect x="316" y="78" width="528" height="204" rx="16" fill="none" stroke="#1A1F47" stroke-width="2"/>
+  <g font-family="'Space Grotesk', Arial, sans-serif" font-size="20" font-weight="600" fill="#FDFFDA" text-anchor="middle">
+    <rect x="48" y="140" width="200" height="80" rx="12" fill="#143F99"/>
+    <text x="148" y="186">Input Speech</text>
+    <rect x="340" y="140" width="200" height="80" rx="12" fill="#143F99"/>
+    <text x="440" y="186">Encoder</text>
+    <rect x="620" y="140" width="200" height="80" rx="12" fill="#FF594A"/>
+    <text x="720" y="186">Decoder</text>
+    <rect x="900" y="140" width="140" height="80" rx="12" fill="#143F99"/>
+    <text x="970" y="186">Text</text>
+  </g>
+  <g fill="none" stroke="#FF594A" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M248 180 H340"/>
+    <path d="M540 180 H620"/>
+    <path d="M820 180 H900"/>
+  </g>
+</svg>

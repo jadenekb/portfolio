@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 460" role="img" aria-label="Decoder block">
+  <rect width="1180" height="460" fill="#FDFFDA"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FF594A"/>
+    </marker>
+  </defs>
+  <text x="590" y="36" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-size="22" font-weight="600" fill="#1A1F47">Nx Decoder Block</text>
+  <rect x="20" y="52" width="1140" height="300" rx="16" fill="none" stroke="#1A1F47" stroke-width="2"/>
+  <path d="M204 218 V142 H350 V218" fill="none" stroke="#1A1F47" stroke-width="1.75"/>
+  <path d="M486 218 V142 H778 V218" fill="none" stroke="#1A1F47" stroke-width="1.75"/>
+  <g font-family="'Space Grotesk', Arial, sans-serif" font-weight="600" text-anchor="middle">
+    <text x="58" y="220" font-size="14" fill="#1A1F47">Input</text>
+    <rect x="92" y="170" width="112" height="96" rx="10" fill="#143F99"/>
+    <text x="148" y="214" font-size="14" fill="#FDFFDA">Gated</text>
+    <text x="148" y="232" font-size="14" fill="#FDFFDA">CNN</text>
+    <rect x="228" y="170" width="122" height="96" rx="10" fill="#143F99"/>
+    <text x="289" y="206" font-size="13" fill="#FDFFDA">Masked</text>
+    <text x="289" y="224" font-size="13" fill="#FDFFDA">Multi-head</text>
+    <text x="289" y="242" font-size="13" fill="#FDFFDA">Attention</text>
+    <rect x="374" y="170" width="112" height="96" rx="10" fill="#143F99"/>
+    <text x="430" y="224" font-size="14" fill="#FDFFDA">Dropout</text>
+    <rect x="510" y="170" width="132" height="96" rx="10" fill="#FF594A"/>
+    <text x="576" y="210" font-size="13" fill="#FDFFDA">Cross-Headed</text>
+    <text x="576" y="228" font-size="13" fill="#FDFFDA">Attention</text>
+    <rect x="666" y="170" width="112" height="96" rx="10" fill="#143F99"/>
+    <text x="722" y="224" font-size="14" fill="#FDFFDA">Dropout</text>
+    <rect x="802" y="170" width="112" height="96" rx="10" fill="#143F99"/>
+    <text x="858" y="214" font-size="14" fill="#FDFFDA">Feed</text>
+    <text x="858" y="232" font-size="14" fill="#FDFFDA">Forward</text>
+    <rect x="938" y="170" width="96" height="96" rx="10" fill="#143F99"/>
+    <text x="986" y="224" font-size="14" fill="#FDFFDA">Linear</text>
+    <rect x="1058" y="170" width="96" height="96" rx="10" fill="#143F99"/>
+    <text x="1106" y="224" font-size="14" fill="#FDFFDA">Softmax</text>
+  </g>
+  <g fill="none" stroke="#FF594A" stroke-width="2.25" marker-end="url(#arrow)">
+    <path d="M84 218 H92"/>
+    <path d="M204 218 H228"/>
+    <path d="M350 218 H374"/>
+    <path d="M486 218 H510"/>
+    <path d="M642 218 H666"/>
+    <path d="M778 218 H802"/>
+    <path d="M914 218 H938"/>
+    <path d="M1034 218 H1058"/>
+    <path d="M576 400 V266"/>
+  </g>
+  <text x="576" y="432" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-size="16" font-weight="600" fill="#1A1F47">Embeddings</text>
+</svg>
